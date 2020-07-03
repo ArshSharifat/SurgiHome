@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 
+</head>
+
+<body>
+ 
+
+    <div>Are you active?</div>
+    <fieldset class="form-group">
+        <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0"></legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                    <label class="form-check-label" for="gridRadios1">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                        No
+                    </label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <div id="question3" style="display: none">Can you walk a few blocks without getting short of breath?
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0"></legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                        <label class="form-check-label" for="gridRadios3">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                        <label class="form-check-label" for="gridRadios4">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    <script type="text/javascript">
+      function ShowHideDiv() {
+        var chkYes = document.getElementById("gridRadios1");
+        var question3 = document.getElementById("question3");
+        question3.style.display = chkYes.checked ? "block" : "none";
+      }
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------------ -->
+    
+
+
+
+</body>
+
+</html>

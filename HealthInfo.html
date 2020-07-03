@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Health Information</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a id="surgihome" class="navbar-brand" href="#">Surgi Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Primary Care <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Surgery Consult</a>
+        <a class="nav-item nav-link" href="#">Prescriptions</a>
+      </div>
+    </div>
+  </nav>
+  <!-- nav bav end -->
+
+  <h2>Health Information</h2>
+  <h3>Allergies</h3>
+  <div>Prior complications with anesthesia?</div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1">post op nauseas and vomiting</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">difficult intubation</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+    <label class="form-check-label" for="inlineCheckbox3">malignant hyperthermia</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+    <label class="form-check-label" for="inlineCheckbox4">anesthesia awareness</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+    <label class="form-check-label" for="inlineCheckbox5">other</label>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1"></label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+    </div>
+  </div>
+
+  <h3>Cardiac</h3>
+
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <script type="text/javascript">
+    function ShowHideDiv() {
+      var chkYes = document.getElementById("gridRadios1");
+      var question3 = document.getElementById("question3");
+      question3.style.display = chkYes.checked ? "block" : "none";
+    }
+  </script>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <div>Are you active?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+          <label class="form-check-label" for="gridRadios1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <!-- <div id="question3" style="display: none"> -->
+  <div id="question3">Can you walk a few blocks without getting short of breath?
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0"></legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+            <label class="form-check-label" for="gridRadios3">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+            <label class="form-check-label" for="gridRadios4">
+              No
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!-- ------------------------------------------------------------------------------------------------------ -->
+  <div>Do you have history of high blood pressure or take blood pressure medications?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+          <label class="form-check-label" for="gridRadios5">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios6" value="option6">
+          <label class="form-check-label" for="gridRadios6">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Any recent chest pain?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value="option7">
+          <label class="form-check-label" for="gridRadios7">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios8" value="option8">
+          <label class="form-check-label" for="gridRadios8">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Have you informed your doctor?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios9" value="option9">
+          <label class="form-check-label" for="gridRadios9">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios10" value="option10">
+          <label class="form-check-label" for="gridRadios10">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Any heart attacks or stents or procedures done on your heart?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios11" value="option11">
+          <label class="form-check-label" for="gridRadios11">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios12" value="option12">
+          <label class="form-check-label" for="gridRadios12">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Have you ever been told you have a rhytm problem with your heart- such as atrial fibrillation?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios11" value="option11">
+          <label class="form-check-label" for="gridRadios11">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios12" value="option12">
+          <label class="form-check-label" for="gridRadios12">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- Image upload -->
+  <form>
+    Can you upload a picture of a recent EKG?
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="customFile">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+  </form>
+
+  <div>Do you have a pace marker or AICD?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios13" value="option13">
+          <label class="form-check-label" for="gridRadios13">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios14" value="option14">
+          <label class="form-check-label" for="gridRadios14">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Do you get pain in your legs when you walk?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios15" value="option15">
+          <label class="form-check-label" for="gridRadios15">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios16" value="option16">
+          <label class="form-check-label" for="gridRadios16">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <h3>Respiratory</h3>
+
+  <div>Do you take any medications or have you felt short of breath recently?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios17" value="option17">
+          <label class="form-check-label" for="gridRadios17">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios18" value="option18">
+          <label class="form-check-label" for="gridRadios18">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Do you have asthma?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios19" value="option19">
+          <label class="form-check-label" for="gridRadios19">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios20" value="option20">
+          <label class="form-check-label" for="gridRadios20">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- Form code begins -->
+  <form method="post">
+    <div class="form-group">
+      <!-- Date input -->
+      <label class="control-label" for="date">When was the last time you used an inhaler?</label>
+      <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+    </div>
+  </form>
+  <!-- Form code ends -->
+
+  <div>Do you smoke?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios22" value="option22">
+          <label class="form-check-label" for="gridRadios22">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios23" value="option23">
+          <label class="form-check-label" for="gridRadios23">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>What do you smoke?</div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+    <label class="form-check-label" for="inlineCheckbox7">Tobacco</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option8">
+    <label class="form-check-label" for="inlineCheckbox8">THC</label>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">How many packs per week?</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </form>
+
+  <!-- Form code begins -->
+  <form method="post">
+    <div class="form-group">
+      <!-- Date input -->
+      <label class="control-label" for="date">When did you start smoking?</label>
+      <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+    </div>
+  </form>
+  <!-- Form code ends -->
+
+  <div>Any shortness of breath?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios24" value="option24">
+          <label class="form-check-label" for="gridRadios24">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios25" value="option25">
+          <label class="form-check-label" for="gridRadios25">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Do you use oxygen at home?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios26" value="option26">
+          <label class="form-check-label" for="gridRadios26">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios27" value="option27">
+          <label class="form-check-label" for="gridRadios27">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Recent cough or respiratory illness?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios28" value="option28">
+          <label class="form-check-label" for="gridRadios28">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios29" value="option29">
+          <label class="form-check-label" for="gridRadios29">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Recent hospitalizations?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios30" value="option30">
+          <label class="form-check-label" for="gridRadios30">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios31" value="option31">
+          <label class="form-check-label" for="gridRadios31">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- Image upload -->
+  <form>
+    Can you upload a picture or report of a recent chest xray?
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="customFile">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+  </form>
+
+  <div>Have you been diagnosed with sleep apnea?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios33" value="option33">
+          <label class="form-check-label" for="gridRadios33">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios34" value="option34">
+          <label class="form-check-label" for="gridRadios34">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <div>Do you current use a CPAP machine at home?</div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0"></legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios28" value="option28">
+          <label class="form-check-label" for="gridRadios28">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios29" value="option29">
+          <label class="form-check-label" for="gridRadios29">
+            No
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+
+
+
+
+
+  <!-- asthma form script -->
+  <script>
+    $(document).ready(function () {
+      var date_input = $('input[name="date"]'); //our date input has the name "date"
+      var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+      var options = {
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+  </script>
+
+  <!-- Image upload -->
+  <script>
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function () {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
